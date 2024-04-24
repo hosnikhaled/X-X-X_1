@@ -66,6 +66,8 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get("/",function (req,res,nxt){res.send("hello");})
+
 app.use("/api", registerRouters);
 app.use("/api", loginRouters);
 app.use("/api", passwordRouters);
