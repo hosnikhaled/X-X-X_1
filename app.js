@@ -18,7 +18,7 @@ const app = express();
 const PORT = process.env.PORT | 3000;
 
 mongoose
-  .connect("mongodb://localhost:27017/users")
+  .connect("mongodb+srv://hosnikhaled64:9NnBrT2A9LkpeN42@cluster0.iawslqq.mongodb.net/users")
   .then(async () => {
     console.log("Database Connected");
     let existingRecords = await User.findOne({ username: "admin" });
