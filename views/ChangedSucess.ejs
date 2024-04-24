@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      .success-logo {
+        animation-name: move;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.2s;
+        animation-iteration-count: 4;
+        width: 200px;
+        position: relative;
+        top: 50px;
+      }
+      .success-logo img {
+        margin-left: 400px;
+      }
+      .succes-msg {
+        position: relative;
+        top: 150px;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin: 30px 0px;
+        animation-name: shadow;
+        animation-duration: 2s;
+        animation-timing-function: step-end;
+        animation-delay: 0.2s;
+        animation-iteration-count: 2;
+      }
+      @keyframes shadow {
+        0% {
+          color: black;
+        }
+        25% {
+          color: rgba(0, 0, 0, 0.474);
+        }
+        50% {
+          color: rgba(0, 0, 0, 0.277);
+        }
+        100% {
+          color: black;
+        }
+      }
+      @keyframes move {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(100px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        margin-left: 50%;
+        border-radius: 100%;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        width: 50%;
+      }
+      .reset-form {
+        height: 500px;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 100px;
+        border: 1px solid #ccc;
+        box-shadow: 0 10px 30px rgb(36, 36, 36);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reset-form">
+      <div class="success-logo">
+        <img
+          src="https://imgs.search.brave.com/SnOUyD0TrAAuLu4WrlusQM109Q8kXYF3QXGfGKvnGcA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pY29u/cy52ZXJ5aWNvbi5j/b20vcG5nLzEyOC9t/aXNjZWxsYW5lb3Vz/L2Nsb3VkLWNhbGwt/Y2VudGVyL3N1Y2Nl/c3MtMjQucG5n"
+        />
+      </div>
+      <div class="succes-msg">Your Password Has Been Reset Succesfully.</div>
+    </div>
+  </body>
+</html>
